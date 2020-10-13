@@ -1,0 +1,103 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  /* background-color: gray; */
+}
+
+.card {
+  position: relative;
+  width: 300px;
+  background: whitesmoke;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+.card .card-image {
+  width: inherit;
+  height: 200px;
+  background: url("/images/man-viewing.jpg");
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-size: cover;
+}
+
+.card .card-text {
+  margin-top: 15px;
+}
+
+.card .card-text .date {
+  color: rgb(167, 62, 62);
+  font-size: 15px;
+}
+
+.card-text p {
+  color: gray;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.card-text h2 {
+  margin-top: 0px;
+  font-size: 28px;
+}
+
+.card .card-status {
+  width: inherit;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: rgb(167, 62, 62);
+  color: whitesmoke;
+}
+
+.card .card-status .stat {
+  position: relative;
+  width: 100px;
+}
+
+.card .card-status .border {
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  border-left: 1px solid rgb(104, 52, 52);
+  border-right: 1px solid rgb(104, 52, 52);
+}
+.card .card-status .type {
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.card .card-status .value {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.card .card-status .value sub {
+  position: absolute;
+  top: -4px;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
